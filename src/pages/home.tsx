@@ -10,7 +10,7 @@ const Home = ({ data }: { data: IData }) => {
       <h1 className={styles.titulo}>Home</h1>
       <br />
       <ul>
-        {data?.results.map(({ name }) => (
+        {data?.results?.map(({ name }) => (
           <li key={name}>{name}</li>
         ))}
       </ul>

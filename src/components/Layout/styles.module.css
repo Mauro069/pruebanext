@@ -1,0 +1,23 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav a:hover {
+    transition-duration: .3s;
+    font-weight: bold;
+}

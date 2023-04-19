@@ -3,8 +3,6 @@ import styles from "../styles/Home.module.css";
 import { IData } from "./api/rick";
 
 const Home = ({ data }: { data: IData }) => {
-  console.log("data", data);
-
   return (
     <Layout>
       <h1 className={styles.titulo}>Home</h1>
@@ -26,6 +24,6 @@ export async function getStaticProps() {
 
   return {
     props: data,
-    revalidate: 86400
+    revalidate: 86400,
   };
 }

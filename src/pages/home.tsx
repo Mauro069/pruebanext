@@ -21,7 +21,7 @@ const Home = ({ data }: { data: IData }) => {
 export default Home;
 
 export async function getStaticProps() {
-  const response = await fetch("/api/rick");
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/rick`);
   const data = await response.json();
 
   return {

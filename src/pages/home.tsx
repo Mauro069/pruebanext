@@ -20,7 +20,7 @@ const Home = ({ data }: { data: IData }) => {
 export default Home;
 
 export async function getStaticProps() {
-  const response = await fetch(`https://${process.env.VERCEL_URL}/api/rick`);
+  const response = await fetch(`/api/rick`);
   const data = await response.json();
 
   console.log(process.env)
